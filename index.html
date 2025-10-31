@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -51,7 +52,10 @@
       border:1px solid rgba(255,255,255,0.02);
     }
     .couple{
-      display:flex;gap:20px;align-items:top;
+      display:center;
+      gap:20px;
+      align-items:top;
+      
     }
 h3{color:#ffb86b}
 
@@ -68,14 +72,13 @@ h3{color:#ffb86b}
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.45);
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom:15px;
 }
 
 .portrait:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.55);
+  transform: scale(1.2);
+  box-shadow: 0 8px 55px rgba(0, 0, 0, 0.95);
 }
-
-
 
     .meta{flex:1}
     .badge{display:inline-block;background:linear-gradient(90deg,var(--accent),#ff8fa3);padding:6px 10px;border-radius:999px;color:#102;font-weight:700;font-size:13px}
@@ -103,6 +106,10 @@ h3{color:#ffb86b}
     footer{margin-top:28px;color:var(--muted);font-size:13px;text-align:center}
     .small{font-size:12px;color:#07182a;}
     .light{font-size:14px;color:#b3bbc4;}
+    .foot{
+      font-size:14px;color:#b3bbc4; font-weight:700;}
+
+
     /* playful confetti */
     .confetti{position:fixed;left:0;right:0;top:0;bottom:0;pointer-events:none;overflow:hidden;z-index:9999}
     .confetti span{position:absolute;font-size:18px;animation:fall linear forwards}
@@ -126,9 +133,6 @@ h3{color:#ffb86b}
       </div>
     </header>
 
-
-
-    
     <section class="hero">
       
       <div class="main-card">
@@ -139,14 +143,15 @@ h3{color:#ffb86b}
             <div class="stats">
               <div class="stat">Years Married: 0.5</div>
               <div class="stat">Total Votes: 2 (including themselves)</div>
-              <div class="stat">Shit-Talking Wins: UNKNOWN</div>
+              <div class="stat">Shit-Talking Wins: UNDEFEATED</div>
               <div class="stat">Last Spotted: Puke Park Pond</div>
             </div>
             <p class="story"> 
                 <p>In the little hell-hole of Assachusetts where everyone knows everyone’s zodiac sign and all the dirt on their ex’s new lover...
                 <p>Enter Kerry Kupid, our self-proclaimed <i>Certified Relationship Logistics Specialist</i> (a title she coined herself). Known around town for her ability to turn awkward introductions into long-term relationships, fuck-buddies or at least memorable one-night-stands.</p>
+                                
                 
-                <p>
+              <p>
 <i>“She told me Mike was handsome in an 'only God can judge me' kind of way,"</i> Megan said, laughing. <i>“Then she told Mike I was ‘the most lady-like thug with a neck tat she had ever met’”</i>
 <p>
 The rest, as Kerry Kupid will tell you between slurps of Pink Pussy, <i>“was a match made in Hell Town.”</i> 
@@ -244,7 +249,6 @@ Now, Megan and Mike are the talk of the town and Kerry Kupid is already getting 
     </section>
 
 
-
 <!-- Sneaky corner video prank -->
 <div style="
   position: fixed;
@@ -268,13 +272,13 @@ Now, Megan and Mike are the talk of the town and Kerry Kupid is already getting 
   </iframe>
 </div>
 
-
-
-    
     <footer>
-      <div class="small">This shit is a loving spoof... Any resemblance to real controversies is purely deliberate and we dont give a fuck! <p>🖕🖕</p></div>
+      <div class="foot"><p>This shit is a loving spoof... Any resemblance to real controversies is purely deliberate and we dont give a fuck!</p> 
+        <img src="them.jpg" alt="Footer Image" style="max-width:70px; height:auto; display:block; margin:0 auto;">
+<p>🖕Copyright🖕</p>
+      </div>
     </footer>
-  </div>
+  
 
   <div class="confetti" id="confetti"></div>
 
@@ -302,8 +306,8 @@ Now, Megan and Mike are the talk of the town and Kerry Kupid is already getting 
       confettiBtn.textContent = 'Much celebration!'
     });
 
-    // playful "mock poll" stored locally
-    // ...tiny interactive feature could be added here...
+    // interactive poll for testimonials could go here
+
   </script>
 </body>
 </html>
