@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Winnekenni Bikini Tiki — Haverhill's Castle-Turned-Tiki Bar</title>
+  <meta name="description" content="Winnekenni Bikini Tiki — a castle converted to a tiki-style bar in Haverhill, MA serving cheeky Greek-o-Rican fusion cocktails. Menu: Pink Pussy, Nichols St. Negroni, Anti-Lemoncello & more." />
+  <link rel="icon" href="data:,"> 
+  <style>
+    :root{
+      --bg:#0f1724; --card:#0b1220; --accent:#f6b042; --muted:#9aa8b7;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:
+      radial-gradient(1200px 600px at 10% 10%, rgba(246,176,66,0.06), transparent 8%),
+      linear-gradient(180deg, #07151b  0%, #071427 45%, black 100%);
+      color:#e6eef6; -webkit-font-smoothing:antialiased; line-height:1.4;}
+    
+    
+     header{padding:clamp(18px,3vw,36px); display:flex; gap:20px; align-items:center; justify-content:space-between}
+    .brand {display:flex; gap:18px; align-items:center}
+    .logo {
+      width: 82px;
+      height: 82px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 8px 30px rgba(2,8,15,0.6);
+      display: block;
+    }
+    h1{font-size:clamp(20px,3.6vw,32px); margin:0}
+    p.lead{margin:6px 0 0;color:var(--muted); font-size:0.95rem}
+    h2{margin-bottom:40px;font-size:clamp(22px,3.2vw,28px); text-align:center;}
+
+    .banner {
+      width: 100%;
+      min-height: 300px;
+      border-radius: 14px;
+      overflow: hidden;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background:
+        linear-gradient(180deg, rgba(6,10,15,0.25), rgba(6,10,15,0.55)),
+        url('./winnekenni-bikini-tiki.png') center center / cover no-repeat;
+      margin: 0 clamp(14px, 2.6vw, 28px) clamp(20px, 3.2vw, 36px);
+      box-shadow: 0 10px 40px rgba(2,6,12,0.6);
+    }
+    .banner .meta {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      color: #fff;
+      padding: clamp(10px, 2vw, 20px);
+    }
+    .banner .meta h2 { margin: 0; font-size: clamp(18px, 2.8vw, 26px); }
+    .banner .meta p { color: var(--muted); margin: 6px 0 0; }
+
+    main{padding:20px clamp(14px,2.8vw,28px) 80px}
+    .nav { display:flex; gap:10px; flex-wrap:wrap; margin-bottom:18px; }
+    .nav a{color:var(--accent); text-decoration:none; background:rgba(255,255,255,0.02); padding:6px 12px; border-radius:999px; font-size:0.95rem}
+    .grid{ display:grid; grid-template-columns: repeat(auto-fit, minmax(260px,1fr)); gap:18px; }
+    .card{
+      background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      border-radius:12px; padding:14px; box-shadow:0 6px 20px rgba(3,7,12,0.6); min-height:260px; display:flex; flex-direction:column;
+      transition:transform .18s ease, box-shadow .18s ease;
+      border:1px solid rgba(255,255,255,0.03);
+    }
+    .card:focus-within, .card:hover{ transform:translateY(-6px); box-shadow:0 18px 40px rgba(2,8,14,0.6) }
+    .media { display:flex; align-items:center; justify-content:center; width:100%; height:140px; border-radius:8px; overflow:hidden; margin-bottom:12px; background:linear-gradient(180deg,#06202c,#0f3948);}
+    .media img { width:100%; height:100%; object-fit:cover; border-radius:8px; }
+    .title {display:flex; align-items:center; justify-content:space-between; gap:8px}
+    .title h3{margin:0; font-size:1.05rem}
+    .desc{color:var(--muted); font-size:0.93rem; margin-top:8px; flex-grow:1}
+    .ingredients{margin:12px 0 0; font-size:0.92rem; color:#dfeaf5}
+    .ingredients li{margin:6px 0; color:var(--muted); font-size:0.88rem}
+    .meta-row{display:flex; gap:8px; align-items:center; margin-top:12px}
+    .btn{background:var(--accent); color:#07121a; padding:8px 12px; border-radius:10px; font-weight:600; text-decoration:none; border:none; cursor:pointer}
+    .link-copy{background:transparent; border:1px solid rgba(255,255,255,0.06); color:var(--muted); padding:8px 10px; border-radius:8px; cursor:pointer}
+    footer{padding:22px; text-align:center; color:var(--muted); font-size:0.9rem}
+    @media (max-width:420px){ .logo{width:64px;height:64px} .banner{min-height:160px} }
+    .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+    h1,h2,h3,h4,h5,h6{font-weight:700;color:#ffb86b}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <img src="tiki-logo.jpg" alt="Winnekenni Bikini Tiki Logo" class="logo" />
+      <h1>Winnekenni Bikini Tiki</h1>
+    </div>
+  </header>
+
+  <div class="banner" role="img" aria-label="Winnekenni Bikini Tiki banner — Historic Castle with cheap tiki decor">
+    <div class="meta">
+    <h2>Greek-o-Rican fusion cocktails. <p>CBD infused palm leaves. Ratchet-ass-north-shore-nonsense.</p></h2>
+    </div>
+  </div>
+
+  <main>
+    <div class="container">
+      <h2>Cocktail Menu</h2>
+    </div>
+
+    <div class="nav" aria-label="Drinks quick links">
+      <a href="#pink-pussy">Pink Pussy</a>
+      <a href="#nichols-street-negroni">Nichols St. Negroni</a>
+      <a href="#anti-lemoncello">Anti-Lemoncello</a>
+      <a href="#plastered-in-plaistow">Plastered in Plaistow</a>
+      <a href="#tequila-mockingbird">Tequila Mockingbird</a>
+      <a href="#mai-taid-the-knot">Mai Tai'd the Knot</a>
+      <a href="#ex-on-the-beach">Ex on the Beach</a>
+      <a href="#plum-island-ice-tea">Plum Island Iced Tea</a>
+      <a href="#rum-around">Rum Around &amp; Find Out</a>
+    </div>
+
+    <section id="menu" aria-labelledby="menu-heading" class="grid" role="list">
+
+      <!-- CARD: Pink Pussy -->
+      <article id="pink-pussy" class="card" role="listitem" aria-labelledby="title-pink-pussy">
+        <div class="media"><img src="pink-pussy.jpg" alt="Pink Pussy cocktail" /></div>
+        <div class="title">
+          <h3 id="title-pink-pussy">Pink Pussy</h3>
+          <button class="link-copy" data-target="pink-pussy" aria-label="Copy link to Pink Pussy">Copy link</button>
+        </div>
+        <p class="desc">A scandalously pink libation that whispers "I have assets" while loudly demanding a piña co-conga line. Classy enough for the parlour; scandalous enough for the moat. </p>
+        <ul class="ingredients">
+          <li>— 1.5 oz Baja Rosa strawberry cream liquor</li>
+          <li>— 1 nip Dr. McGillicuddy's Menthol Peppermint Schnapps</li>
+          <li>—Make it squirt with a splash of Cherry Bitters</li>
+        </ul>
+      </article>
+
+      <!-- CARD: Nichols St. Negroni -->
+      <article id="nichols-street-negroni" class="card" role="listitem" aria-labelledby="title-nichols">
+        <div class="media"><img src="nichols-street-negroni.jpg" alt="Nichols Street Negroni cocktail" /></div>
+        <div class="title">
+          <h3 id="title-nichols">Nichols St. Negroni</h3>
+          <button class="link-copy" data-target="nichols-street-negroni" aria-label="Copy link to Nichols St. Negroni">Copy link</button>
+        </div>
+        <p class="desc">One sip and you’ll be bouncing off the walls like you just hit the Nichols Street jackpot. Equal parts baking soda and “no, you cant find this in the liquor store,” this Negroni will have you questioning your life choices... while constantly peeking out the window.</p>
+        <ul class="ingredients">
+    <li>— 1 gram Coke</li>
+    <li>— pinch of Arm & Hammer</li>
+    <li>— spoon cooked to perfection over a low flame</li>
+    <li>— smoked <i>(optional)</i></li>
+    
+  </ul>
+      </article>
+
+      <!-- CARD: Anti-Lemoncello -->
+      <article id="anti-lemoncello" class="card" role="listitem" aria-labelledby="title-antilemon">
+        <div class="media"><img src="anti-lemoncello.jpg" alt="Anti-Lemoncello cocktail" /></div>
+        <div class="title">
+          <h3 id="title-antilemon">Anti-Lemoncello</h3>
+          <button class="link-copy" data-target="anti-lemoncello" aria-label="Copy link to Anti-Lemoncello">Copy link</button>
+        </div>
+        <p class="desc">For those who like their citrus with a tiny side of revenge. Tart, herbaceous, and blessed by someone’s abuela who used to throw olives at bad suitors.</p>
+        <ul class="ingredients">
+          <li>— 1.5 oz citron vodka</li>
+          <li>— 0.75 oz lemon cordial</li>
+          <li>— 0.5 oz rosemary syrup</li>
+          <li>— splash of soda & lemon wheel</li>
+        </ul>
+      </article>
+
+      <!-- CARD: Plastered in Plaistow -->
+      <article id="plastered-in-plaistow" class="card" role="listitem" aria-labelledby="title-plaistow">
+        <div class="media"><img src="plastered-in-plaistow.jpg" alt="Plastered in Plaistow cocktail" /></div>
+        <div class="title">
+          <h3 id="title-plaistow">Plastered in Plaistow</h3>
+          <button class="link-copy" data-target="plastered-in-plaistow" aria-label="Copy link to Plastered in Plaistow">Copy link</button>
+        </div>
+        <p class="desc">Missed the packy in Mass?? Head up Route 125 for this border-town favorite.</p>
+        <ul class="ingredients">
+          <li>— 1 oz dark rum</li>
+          <li>— 1 oz blanco tequila</li>
+          <li>— 0.75 oz lime</li>
+          <li>— 0.5 oz cane syrup</li>
+          <li>— float of overproof rum & grated nutmeg</li>
+        </ul>
+      </article>
+
+      <!-- CARD: Tequila Mockingbird -->
+      <article id="tequila-mockingbird" class="card" role="listitem" aria-labelledby="title-mockingbird">
+        <div class="media"><img src="tequila-mockingbird.jpg" alt="Tequila Mockingbird cocktail" /></div>
+        <div class="title">
+          <h3 id="title-mockingbird">Tequila Mockingbird</h3>
+          <button class="link-copy" data-target="tequila-mockingbird" aria-label="Copy link to Tequila Mockingbird">Copy link</button>
+        </div>
+        <p class="desc">Part Southern Gothic, part seaside siesta. The kind of drink you bring to a book club if you want everyone to gossip and then forgive you by dessert.</p>
+        <ul class="ingredients">
+          <li>— 2 oz reposado tequila</li>
+          <li>— 0.5 oz mezcal (smoky wink)</li>
+          <li>— 0.75 oz hibiscus-lime syrup</li>
+          <li>— lime & toasted salt rim</li>
+        </ul>
+      </article>
+
+      <!-- CARD: Mai Tai'd the Knot -->
+      <article id="mai-taid-the-knot" class="card" role="listitem" aria-labelledby="title-maitai">
+        <div class="media"><img src="mai-taid-the-knot.jpg" alt="Mai Tai'd the Knot cocktail" /></div>
+        <div class="title">
+          <h3 id="title-maitai">Mai Tai'd the Knot</h3>
+          <button class="link-copy" data-target="mai-taid-the-knot" aria-label="Copy link to Mai Tai'd the Knot">Copy link</button>
+        </div>
+        <p class="desc">Perfect for newlyweds and people who just want to promise things under tiki-torch lights. A citrusy vow with a rum aftertaste that says "I will, probably."</p>
+        <ul class="ingredients">
+          <li>— 1.5 oz aged rum</li>
+          <li>— 0.5 oz curaçao</li>
+          <li>— 0.75 oz lime juice</li>
+          <li>— 0.5 oz orgeat & 0.25 oz simple</li>
+        </ul>
+      </article>
+
+      <!-- CARD: Ex on the Beach -->
+      <article id="ex-on-the-beach" class="card" role="listitem" aria-labelledby="title-ex">
+        <div class="media"><img src="ex-on-the-beach.jpg" alt="Ex on the Beach cocktail" /></div>
+        <div class="title">
+          <h3 id="title-ex">Ex on the Beach</h3>
+          <button class="link-copy" data-target="ex-on-the-beach" aria-label="Copy link to Ex on the Beach">Copy link</button>
+        </div>
+        <p class="desc">Rum, regret, and a little pineapple. Best enjoyed while looking at the ocean or at someone's expired relationship status with envy.</p>
+        <ul class="ingredients">
+          <li>— 1 oz white rum</li>
+          <li>— 1 oz peach schnapps</li>
+          <li>— 1 oz cranberry</li>
+          <li>— splash pineapple & lime</li>
+           <li>— garnished with radish</li>
+        </ul>
+      </article>
+
+      <!-- CARD: Plum Island Iced Tea -->
+      <article id="plum-island-ice-tea" class="card" role="listitem" aria-labelledby="title-plum">
+        <div class="media"><img src="plum-island-ice-tea.jpg" alt="Plum Island Iced Tea cocktail" /></div>
+        <div class="title">
+          <h3 id="title-plum">Plum Island Iced Tea</h3>
+          <button class="link-copy" data-target="plum-island-ice-tea" aria-label="Copy link to Plum Island Iced Tea">Copy link</button>
+        </div>
+        <p class="desc">A coastal long island remix. Salty breeze, sweet berries, and the faint possibility of a tan.</p>
+        <ul class="ingredients">
+          <li>— 0.5 oz vodka</li>
+          <li>— 0.5 oz gin</li>
+          <li>— 0.5 oz rum</li>
+          <li>— 0.5 oz tequila</li>
+          <li>— 0.5 oz triple sec, cranberry & soda</li>
+        </ul>
+      </article>
+
+      <!-- CARD: Rum Around & Find Out -->
+      <article id="rum-around" class="card" role="listitem" aria-labelledby="title-rum">
+        <div class="media"><img src="rum-around.jpg" alt="Rum Around & Find Out cocktail" /></div>
+        <div class="title">
+          <h3 id="title-rum">Rum Around &amp; Find Out</h3>
+          <button class="link-copy" data-target="rum-around" aria-label="Copy link to Rum Around & Find Out">Copy link</button>
+        </div>
+        <p class="desc">Exploration in a glass. Adventure awaits, hangovers optional.</p>
+        <ul class="ingredients">
+          <li>— 1 oz dark rum</li>
+          <li>— 1 oz spiced rum</li>
+          <li>— 0.5 oz lime juice</li>
+          <li>— 0.5 oz Coke(not Pepsi)</li>
+        </ul>
+      </article>
+
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Winnekenni Bikini Tiki — All Rights Reserved.
+  </footer>
+</body>
+</html>
