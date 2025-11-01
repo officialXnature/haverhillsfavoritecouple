@@ -28,11 +28,11 @@
   min-height: 100vh; /* ensures it covers full viewport height */
 }
 
-    .wrap{width:100%;max-width:var(--max-w);}
+    .wrap{width:95%;max-width:var(--max-w);}
     header{display:flex;gap:20px;align-items:center;margin-bottom:22px}
     .logo{
       width:200px;
-      height:125px;%;
+      height:125px;
       border-radius:50%;
       background-image:url('haves-faves-logo.png');
       background-size:cover;
@@ -251,8 +251,8 @@ The couple’s first date took place at the only bar in town where Kerry is stil
 <div style="
   position: fixed;
   bottom: 10px;
-  right: 10px;
-  width: 250px;
+  right: 1px;
+  width: 200px;
   height: 140px;
   z-index: 999;
   opacity: 0.7;
@@ -270,12 +270,45 @@ The couple’s first date took place at the only bar in town where Kerry is stil
   </iframe>
 </div>
 
-    <footer>
-      <div class="foot"><p>This shit is a loving spoof... Any resemblance to real controversies is purely deliberate and we dont give a fuck!</p> 
-        <img src="them.jpg" alt="Footer Image" style="max-width:50px; height:auto; display:block; margin:0 auto; border-radius:50%;">
-<p>🖕 © 2025 🖕</p>
-      </div>
-    </footer>
+    <!-- =======================
+     FOOTER SECTION
+======================= -->
+<footer style="text-align:center; padding:40px 0; color:#fff; position:relative;">
+
+  <p>This shit is a satirical spoof built with ❤️ </p><p>Any resemblance to real controversies is purely deliberate and we dont give a fuck!</p>
+  <!-- =======================
+       HEART IMAGE CONTAINER
+       This div contains the image clipped to a heart shape
+  ======================= -->
+  <div style="
+    width:120px; 
+    height:120px; 
+    margin:0 auto 0px auto; 
+    clip-path: path('M24 44c0-12 8-20 20-20 6 0 12 3 16 8 4-5 10-8 16-8 12 0 20 8 20 20 0 10-6 18-16 28L60 84 40 72C30 62 24 54 24 44Z');
+    -webkit-clip-path: path('M24 44c0-12 8-20 20-20 6 0 12 3 16 8 4-5 10-8 16-8 12 0 20 8 20 20 0 10-6 18-16 28L60 84 40 72C30 62 24 54 24 44Z');
+    overflow:hidden; 
+    background:rgba(255,255,255,0.1);
+    display:flex; 
+    align-items:center; 
+    justify-content:center;
+  ">
+    <!-- =======================
+         HEART-SHAPED IMAGE
+         Replace "them.jpg" with your actual file name
+    ======================= -->
+    <img src="them.jpg" alt="Footer image" 
+         style="width:60%; height:60%; object-fit:cover; display:block;" />
+  </div>
+
+  <!-- =======================
+       FOOTER TEXT CONTENT
+  ======================= -->
+  <p style="font-size:14px; letter-spacing:0.5px;">
+    🖕 © 2025 🖕  
+  </p>
+
+</footer>
+
   
 
   <div class="confetti" id="confetti"></div>
